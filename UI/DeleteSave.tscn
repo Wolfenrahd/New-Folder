@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/DeleteSave.gd" type="Script" id=1]
+
+[node name="DeleteSave" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = 125.0
+margin_right = 1024.0
+margin_bottom = 139.0
+text = "Are you sure? This cannot be undone!"
+align = 1
+
+[node name="CancelButton" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 150.0
+margin_right = 506.0
+margin_bottom = 170.0
+text = "No, take me back!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesButton" type="Button" parent="."]
+margin_left = 520.0
+margin_top = 150.0
+margin_right = 770.0
+margin_bottom = 170.0
+text = "Yes, I'm sure."
+[connection signal="pressed" from="CancelButton" to="." method="_on_CancelButton_pressed"]
+[connection signal="pressed" from="YesButton" to="." method="_on_YesButton_pressed"]
