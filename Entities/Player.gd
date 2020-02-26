@@ -19,4 +19,4 @@ func _physics_process(delta):
 	global.playerY = position.y
 	
 	if(Input.is_action_just_pressed("pause")):
-		global.saveGame()
+		get_tree().paused = true

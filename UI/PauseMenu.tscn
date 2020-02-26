@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/PauseMenu.gd" type="Script" id=1]
+
+[node name="PauseMenu" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 384.0
+margin_top = 250.0
+margin_right = 640.0
+margin_bottom = 350.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_top = 10.0
+margin_right = 256.0
+margin_bottom = 24.0
+text = "PAUSED"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnpauseButton" type="Button" parent="ColorRect"]
+margin_left = 64.0
+margin_top = 45.0
+margin_right = 196.0
+margin_bottom = 65.0
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitButton" type="Button" parent="ColorRect"]
+margin_left = 64.0
+margin_top = 70.0
+margin_right = 196.0
+margin_bottom = 90.0
+text = "Quit to Main Menu"
+[connection signal="pressed" from="ColorRect/UnpauseButton" to="." method="_on_UnpauseButton_pressed"]
+[connection signal="pressed" from="ColorRect/QuitButton" to="." method="_on_QuitButton_pressed"]
