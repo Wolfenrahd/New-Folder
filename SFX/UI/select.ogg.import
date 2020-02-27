@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/select.ogg-abb9e067f01393c1e157d9b5df8f45b6.oggstr"
+
+[deps]
+
+source_file="res://SFX/UI/select.ogg"
+dest_files=[ "res://.import/select.ogg-abb9e067f01393c1e157d9b5df8f45b6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

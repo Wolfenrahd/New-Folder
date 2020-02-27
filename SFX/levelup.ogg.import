@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/levelup.ogg-39af4bc0162af0ad7748bc6933f02d08.oggstr"
+
+[deps]
+
+source_file="res://SFX/levelup.ogg"
+dest_files=[ "res://.import/levelup.ogg-39af4bc0162af0ad7748bc6933f02d08.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
